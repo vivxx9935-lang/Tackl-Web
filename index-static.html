@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tackl Planner</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/windows.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+  <div class="app-window">
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-mark">T</span>
+        <div>
+          <h1>tackl</h1>
+          <p>Calm planning for busy teens and adults</p>
+        </div>
+      </div>
+      <nav class="nav-tabs">
+        <a href="#home" class="tab active">Home</a>
+        <a href="#calendar" class="tab">Calendar</a>
+        <a href="#schedule" class="tab">Schedule</a>
+        <a href="#family" class="tab">Family</a>
+      </nav>
+      <div class="actions">
+        <a href="#login" class="button button-secondary">Log In</a>
+        <a href="#logout" class="button button-primary">Log Out</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="login" class="section window-panel">
+        <div class="panel-header">
+          <h2>Account Access</h2>
+          <p>Sign in to manage goals, reminders, and family assignments.</p>
+        </div>
+        <div class="panel-body">
+          <div class="card login-card">
+            <div class="input-group">
+              <label>Username</label>
+              <div class="input-field">teen_user</div>
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <div class="input-field">••••••••</div>
+            </div>
+            <div class="button-row">
+              <a class="button button-primary">Log In</a>
+              <a class="button button-secondary">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home" class="section window-panel">
+        <div class="panel-header">
+          <h2>Home Dashboard</h2>
+          <p>Your task manager, reminders, and goal setter in one calm space.</p>
+        </div>
+        <div class="panel-grid">
+          <article class="card task-card">
+            <h3>Todays Focus</h3>
+            <ul>
+              <li>Finish math assignment</li>
+              <li>Plan weekend family activity</li>
+              <li>Review work schedule</li>
+            </ul>
+          </article>
+          <article class="card goal-card">
+            <h3>Goal Setter</h3>
+            <p>Reach 5 study sessions this week and balance social time.</p>
+          </article>
+          <article class="card category-card">
+            <h3>Task Categories</h3>
+            <div class="chip-list">
+              <span class="chip">School Work</span>
+              <span class="chip">Housework</span>
+              <span class="chip">Actual Work</span>
+              <span class="chip">Social</span>
+              <span class="chip">Event</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="calendar" class="section window-panel">
+        <div class="panel-header">
+          <h2>Calendar View</h2>
+          <p>See your month at a glance with space for appointments and deadlines.</p>
+        </div>
+        <div class="calendar-card card">
+          <div class="calendar-grid">
+            <div class="calendar-day header">Sun</div>
+            <div class="calendar-day header">Mon</div>
+            <div class="calendar-day header">Tue</div>
+            <div class="calendar-day header">Wed</div>
+            <div class="calendar-day header">Thu</div>
+            <div class="calendar-day header">Fri</div>
+            <div class="calendar-day header">Sat</div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day event">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day">5</div>
+            <div class="calendar-day task">6</div>
+            <div class="calendar-day">7</div>
+            <div class="calendar-day">8</div>
+            <div class="calendar-day task">9</div>
+            <div class="calendar-day">10</div>
+            <div class="calendar-day">11</div>
+            <div class="calendar-day event">12</div>
+            <div class="calendar-day">13</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section window-panel">
+        <div class="panel-header">
+          <h2>Daily & Weekly Schedule</h2>
+          <p>Plan your day and week with time slots for each important task.</p>
+        </div>
+        <div class="schedule-grid">
+          <div class="card schedule-card">
+            <h3>Day Plan</h3>
+            <ol>
+              <li><strong>8:00 AM</strong> - Breakfast & assignment review</li>
+              <li><strong>10:00 AM</strong> - School work session</li>
+              <li><strong>1:00 PM</strong> - Housework break</li>
+              <li><strong>4:00 PM</strong> - Social activity planning</li>
+            </ol>
+          </div>
+          <div class="card schedule-card">
+            <h3>Week Plan</h3>
+            <ul>
+              <li>Monday: Study + chores</li>
+              <li>Wednesday: Work review</li>
+              <li>Friday: Goal check-in</li>
+              <li>Sunday: Family planning</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="family" class="section window-panel">
+        <div class="panel-header">
+          <h2>Parent & Child Accounts</h2>
+          <p>Manage family assignments, progress, and shared tasks in one calm view.</p>
+        </div>
+        <div class="panel-grid family-grid">
+          <article class="card family-card">
+            <h3>Parent Account</h3>
+            <p>Oversee your childs schedule and assign tasks with care.</p>
+            <ul>
+              <li>Review homework due dates</li>
+              <li>Set morning routine reminders</li>
+              <li>Approve weekly family events</li>
+            </ul>
+          </article>
+          <article class="card family-card">
+            <h3>Child Account</h3>
+            <p>Track assignments, chores, and social events with friendly categories.</p>
+            <div class="chip-list">
+              <span class="chip">Math</span>
+              <span class="chip">Reading</span>
+              <span class="chip">Chores</span>
+              <span class="chip">Sports</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="logout" class="section window-panel">
+        <div class="panel-header">
+          <h2>Logged Out</h2>
+          <p>Your session is ready to close. Return any time to continue planning.</p>
+        </div>
+        <div class="panel-body">
+          <div class="card logout-card">
+            <p>Tap Log In again when you are ready to return.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

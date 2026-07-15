@@ -1,0 +1,27 @@
+/* Polymorphism: tabs use a shared base style with active and default variants. */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 16px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(20, 91, 61, 0.08);
+}
+
+.tab.active {
+  color: #ffffff;
+  background: linear-gradient(135deg, #4a915f, #2a6b41);
+  border-color: rgba(58, 143, 95, 0.22);
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.98);
+}

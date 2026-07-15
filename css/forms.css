@@ -1,0 +1,200 @@
+.login-shell {
+  max-width: 540px;
+  margin: 40px auto;
+}
+
+.login-card,
+.category-form {
+  display: grid;
+  gap: 18px;
+}
+
+input[type='text'],
+input[type='password'],
+.category-entry input {
+  width: 100%;
+  border: 1px solid rgba(58, 143, 95, 0.22);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #f8fdf8;
+  color: #1f5c3d;
+}
+
+.password-field {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.show-password-button {
+  min-width: 72px;
+  font-size: 0.88rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.show-password-button::before {
+  content: '👁';
+  margin-right: 6px;
+}
+
+.show-password-button.password-visible::before {
+  content: '🙈';
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+.category-entry input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(125, 191, 127, 0.14);
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(58, 143, 95, 0.12);
+  color: #2f5d3f;
+  font-size: 0.95rem;
+}
+
+.radio-group input {
+  accent-color: #3a8f5f;
+}
+
+.category-form {
+  margin-top: 1rem;
+}
+
+.category-entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.hint-text {
+  margin-top: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.error-panel {
+  background: rgba(255, 233, 233, 0.95);
+  border: 1px solid #e4b8b8;
+  padding: 14px 18px;
+  border-radius: 18px;
+  color: #7a2d2d;
+}
+
+.flash-message,
+.popup {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(-16px);
+  background: #ffffff;
+  border: 1px solid rgba(58, 143, 95, 0.2);
+  border-radius: 16px;
+  padding: 12px 16px;
+  color: #1c593a;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  max-width: 320px;
+  box-shadow: 0 14px 30px rgba(15, 52, 28, 0.12);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 20;
+}
+
+.flash-message.visible,
+.popup.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.account-badge {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.task-form .button-primary {
+  padding: 0.75rem 1.2rem;
+  font-size: 0.95rem;
+  margin-top: 12px;
+}
+
+.page-shell {
+  padding-top: 20px;
+}
+
+.register-shell {
+  max-width: 720px;
+  margin: 40px auto;
+}
+
+.register-card {
+  display: grid;
+  gap: 18px;
+}
+
+.register-shell .section-header h3 {
+  margin: 0 0 0.5rem;
+}
+
+.parent-child-block {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px dashed rgba(78, 116, 179, 0.25);
+  background: rgba(226, 236, 255, 0.72);
+}
+
+.success-panel {
+  background: rgba(224, 255, 233, 0.95);
+  border: 1px solid rgba(110, 183, 118, 0.35);
+  padding: 16px 18px;
+  border-radius: 18px;
+  color: #1c5a2e;
+}
+
+.conditional-field {
+  display: grid;
+  gap: 8px;
+}
+
+.register-shell.account-child .panel-header {
+  background: linear-gradient(135deg, #fffbf2 0%, #d8eefc 100%);
+}
+
+.register-shell.account-teen .panel-header {
+  background: linear-gradient(135deg, #f8f1ff 0%, #d9f2ff 100%);
+}
+
+.register-shell.account-adult .panel-header {
+  background: linear-gradient(135deg, #f7f7f7 0%, #e8f6e8 100%);
+}
+
+.register-shell.account-parent .panel-header {
+  background: linear-gradient(135deg, #fff3e9 0%, #e1f1fa 100%);
+}
+
+.register-shell.account-child .card,
+.register-shell.account-teen .card,
+.register-shell.account-adult .card,
+.register-shell.account-parent .card {
+  border-color: rgba(110, 143, 173, 0.16);
+}

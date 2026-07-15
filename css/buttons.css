@@ -1,0 +1,43 @@
+/* Abstraction: buttons expose a simple interface while internals stay styled inside the base class. */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.45rem;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.25s ease;
+  font-weight: 500;
+}
+
+.button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, #2d8c5f, #1f5f3d);
+  box-shadow: 0 14px 30px rgba(45, 140, 95, 0.25);
+}
+
+.button-primary:hover {
+  box-shadow: 0 16px 36px rgba(45, 140, 95, 0.3);
+}
+
+.button-secondary {
+  color: var(--text-primary);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(240, 255, 240, 0.96));
+  border-color: rgba(45, 140, 95, 0.2);
+}
+
+.button-secondary:hover {
+  border-color: rgba(45, 140, 95, 0.35);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(45, 140, 95, 0.32);
+  outline-offset: 2px;
+}

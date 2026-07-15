@@ -1,0 +1,62 @@
+/* Windows and cards behave like objects with shared styling and specialized variants. */
+.window-panel {
+  padding: 28px;
+  border-radius: 30px;
+}
+
+.panel-header {
+  max-width: 720px;
+}
+
+.panel-body {
+  margin-top: 24px;
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbf6 100%);
+}
+
+.task-card {
+  min-height: 190px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fbf5 100%);
+  border-top: 4px solid var(--accent);
+}
+
+.goal-card {
+  min-height: 190px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+  border-top: 4px solid var(--secondary);
+}
+
+.category-card {
+  min-height: 190px;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbf5 100%);
+  border-top: 4px solid var(--warning);
+}
+
+.schedule-card {
+  min-height: 210px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5fbff 100%);
+  border-top: 4px solid var(--info);
+}
+
+.family-card {
+  min-height: 220px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+  border-top: 4px solid var(--secondary);
+}
+
+.quote-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f5fbf8 100%);
+  border-top: 4px solid var(--accent-bright);
+}
+
+.logout-card {
+  padding: 28px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.calendar-card {
+  background: radial-gradient(circle at top left, rgba(112, 187, 107, 0.15), rgba(255, 255, 255, 0.92));
+}
